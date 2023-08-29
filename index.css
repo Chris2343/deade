@@ -1,0 +1,266 @@
+/* Original CSS */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#1f5282, #0a4e8d);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.header-logo a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    header ul {
+        display: flex;
+    }
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    color: #0e62a6;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #1F3848, transparent);
+    z-index: 1000;
+}
+
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#logo {
+    position: relative;
+    top: -4em;
+    max-width: 100%;
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+    mix-blend-mode: normal;
+    z-index: 400;
+}
+
+#text {
+    position: relative;
+    color: #fff;
+    font-size: 7.5vw;
+    z-index: 9;
+    margin: 20px 0;
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 40px;
+    background: #EE6C4D;
+    color: #98C1D9;
+    font-size: 1.2em;
+    z-index: 20;
+    margin: 20px 0;
+    transform: translateY(10px);
+}
+
+.sec {
+    position: relative;
+    padding: 50px 15px;
+    background: #173141;
+    text-align: center;
+}
+
+.sec h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #173141;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.follow-us,
+.contact-info {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.follow-us h3,
+.contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Change from row to column */
+    align-items: flex-start; /* Align vertically */
+}
+
+.social-icons li {
+    margin: 10px 0; /* Add some vertical spacing */
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* styles.css */
+/* Original CSS */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#1f5282, #0a4e8d);
+}
+
+/* Header Styles */
+.header-line {
+    height: 2px;
+    background-color: #fff;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 100px;
+    height: auto;
+}
+
+.navbar {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/* ... (Rest of the existing styles) */
+
+/* Footer Styles */
+.site-footer {
+    background-color: #111111;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-line {
+    height: 2px;
+    background-color: #fff;
+}
+
+/* ... (Rest of the existing styles) */
